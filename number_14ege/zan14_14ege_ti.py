@@ -61,7 +61,7 @@ for x in range(1, 1000):
     s1 = string.digits
     while v > 0:
         s += s1[v % 3]
-        v //= 3
+        v //= 3 
     s = s[::-1]
     #TypeError: int() can't convert non-string with explicit base
     if sum(map(int, s)) == 22:
