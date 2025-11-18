@@ -111,4 +111,8 @@ N = 26
 i = ceil(log2(N))
 N1 = 3000
 i1 = ceil(log2(N))
-for 
+for x in range(1, 10 ** 5):
+    V = ceil(i * k / 8) + ceil(i1 / 8) + x
+    if V * 50 == 2500:
+        print(x)
+        break
