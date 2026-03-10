@@ -433,9 +433,6 @@ import re
 
 s = open('24_16333.txt').readline().strip()
 
-letters = "QRW"
-numbers = "124"
+pattern = r"[QRW](?:[124][QRW])*[124]?|[124](?:[QRW][124])*[QRW]?"
 
-pattern = rf"(?:[{letters}][{numbers}])*"
-
-print(len(max(re.findall(pattern, s), key = len)))
+print(len(max(re.findall(pattern, s), key=len)))
