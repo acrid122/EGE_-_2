@@ -1,5 +1,3 @@
-from fnmatch import fnmatch
-
 '''
 print(help(fnmatch))
 
